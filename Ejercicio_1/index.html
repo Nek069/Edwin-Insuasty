@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<html lang="es">
+
+<body>
+    <main class="form-page">
+
+        <section class="form-section">
+
+            <img src="img/fox.jpg" width="320">
+            
+            <div class="form-container">
+
+                <header class="form-header">
+
+                    <span class="eyebrow">Regristrate</span>
+
+                    <h1>Crea tu cuenta</h1>
+
+                    <p>Ingresa tus datospara crear
+                        tu cuenta personal <br>
+                        los campos marcados * son obligatorios
+                    </p>
+
+                </header>
+
+                <form class="register-form" action="#" method="POST">
+                    
+                    <div class="form-field">
+
+                        <div class="form-field">
+                            <label for="nombre">Nombre
+                            <span class="required-mark" aria-hidden="true">*</span></label>
+                            
+                            <input type="text"
+                            id="nombre"
+                            name="nombre"
+                            autocomplete="given-name"
+                            placeholder="Sophia"
+                            required>
+
+                        </div>
+
+                        <div class="form-field">
+                            
+                            <label for="apellido">Apellido
+                                 <span class="required-mark" aria-hidden="true"> *</span>
+                            </label>
+                            
+                            <input type="text"
+                            id="apellido"
+                            name="apellido"
+                            autocomplete="family-name"
+                            placeholder="Estrada"
+                            required>
+                        </div>
+
+                        <div class="form-field">
+                            
+                            <label for="email">Correo
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            
+                            <input type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="user@email.com"
+                            required>
+                        </div>
+
+                        <div class="form-field">
+                            
+                            <label for="password">Contraseña
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            
+                            <input type="password"
+                            name="password"
+                            minlength="5"
+                            autocomplete="new-password"
+                            required
+                            placeholder="**************">
+                        </div>
+
+                        <div class="form-field">
+                            
+                            <label for="password">Confirmar Contraseña
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            
+                            <input type="password"
+                            name="password"
+                            minlength="5"
+                            autocomplete="new-password"
+                            required
+                            placeholder="**************">
+
+                        </div>
+
+                    </div>
+                
+                    <!-- Terminos -->
+                    <label class="information">
+                        <span>Lee los 
+                            <a href="#">Terminos</a> y
+                            <a href="#">Condiciones de Privacidad</a>
+                            asociados
+                        </span>
+                    </label>
+
+                    <label class="choice">
+
+                        <input type="checkbox"
+                        name="terminos"
+                        required>
+                        
+                        <span>Acepto los terminos y condiciones de privacidad 
+
+                        </span>
+
+                    </label>
+
+                    <!-- Botón -->
+
+                    <div class="form-actions">
+
+                        <button type="submit"
+                        class="button
+                        register-button">
+                            Registrar
+                        </button>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

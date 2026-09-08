@@ -1,0 +1,429 @@
+:root {
+    --primary: #ff8400;
+    --primary-hover: #FF6D00;
+    --primary-light: #fdc68b;
+
+    --navy: #141b229a;
+    --text: #1a242e;
+    --muted: #4f5964;
+    
+    --border: #84878a; 
+    --background: #ffffff;
+    --background-soft: #22394dc2;
+
+    --danger: #c62828;
+    --pass: #2e7d32;
+
+    --radius-sm: 7px;
+    --radius-md: 8px;
+    --radius-lg: 15px;
+
+    --shadow:
+        0 24px 70px rgba(136, 87, 58, 0.315) solid;
+
+    --container: 700px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+
+    background:
+        var(--background-soft);
+
+    color:
+        var(--text);
+}
+
+.eyebrow {
+    color:
+        var(--primary);
+
+    font-size:
+        .85rem;
+
+    font-weight:
+        1000;
+
+    letter-spacing:
+        .12em;
+}
+
+.form-section {
+    padding: 70px 20px;
+
+    display: flex;
+
+    align-items: stretch;  
+
+    justify-content: center;
+
+    gap: 0;
+
+    flex-wrap: nowrap;
+}
+.form-section img {
+    width: 320px;
+
+    height: auto;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
+.form-container {
+    width:
+        min(100%,
+            var(--container));
+
+    padding:
+        42px;
+
+    background:
+        var(--background);
+
+    border:
+        2px solid var(--border);
+
+    border-radius:
+        0 var(--radius-lg) var(--radius-lg) 0;
+    
+        border-left: none;
+
+    box-shadow:
+        var(--shadow);
+}
+
+.form-header {
+    max-width:
+        720px;
+
+    margin-bottom:
+        38px;
+}
+
+.form-header h1 {
+    margin:
+        12px 0 0;
+
+    color:
+        var(--navy) solid   ;
+
+    font-size:
+        clamp(2.2rem,
+            5vw,
+            3.6rem);
+
+    line-height:
+        1.05;
+}
+
+.form-header p {
+    margin:
+        18px 0 0;
+
+    color:
+        var(--muted);
+
+    line-height:
+        1.7;
+}
+
+.register-form {
+    display:
+        grid;
+
+    gap:
+        26px;
+}
+
+.required-mark {
+    color:
+        var(--danger);
+}
+
+.information {
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        10px;
+
+    color:
+        var(--text);
+
+}
+
+.choice {
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        10px;
+
+    color:
+        var(--text);
+
+    cursor:
+        pointer;
+}
+
+.choice input {
+    margin-top:
+        3px;
+
+    accent-color:
+        var(--primary);
+}
+
+.button {
+    width: 100%;
+
+    min-height:
+        46px;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        0 20px;
+
+    border-radius:
+        var(--radius-sm);
+
+    font:
+        inherit;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    transition:
+        transform 160ms ease,
+        background-color 160ms ease,
+        border-color 160ms ease;
+
+    border:
+        1px solid var(--primary);
+
+    background:
+        var(--primary);
+
+    color:
+        #ffffff;
+}
+
+.button:hover {
+    background:
+        var(--primary-hover);
+
+    border-color:
+        var(--primary-hover);
+
+    transform:
+        translateY(-1px);
+}
+
+.form-field {
+    display:
+        grid;
+
+    gap:
+        8px;
+}
+
+.form-field label {
+    color:
+        var(--navy);
+
+    font-size:
+        .92rem;
+
+    font-weight:
+        650;
+}
+
+/* CONTROLES */
+
+.form-field input,
+.form-field select {
+    width:
+        100%;
+
+    padding:
+        13px 14px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-sm);
+
+    background:
+        #ffffff;
+
+    color:
+        var(--text);
+
+    font:
+        inherit;
+
+    outline:
+
+        none;
+
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background-color 160ms ease;
+}
+
+
+.form-field input::placeholder {
+    color:
+        #98a2b3;
+}
+
+/* FOCUS */
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color:
+        var(--primary);
+
+    box-shadow:
+        0 0 0 4px rgba(134, 109, 98, 0.12);
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.button:focus-visible {
+    outline:
+        3px solid rgba(253, 122, 46, 0.397);
+
+    outline-offset:
+        2px;
+}
+
+/* SELECT */
+
+.form-field select {
+    appearance:
+        none;
+
+    background-image:
+        linear-gradient(45deg,
+            transparent 50%,
+            var(--muted) 50%),
+        linear-gradient(135deg,
+            var(--muted) 50%,
+            transparent 50%);
+
+
+    background-position:
+        calc(100% - 18px) 50%,
+        calc(100% - 13px) 50%;
+
+    background-size:
+        5px 5px,
+        5px 5px;
+
+    background-repeat:
+        no-repeat;
+
+    padding-right:
+        42px;
+}
+
+
+.form-field input:not(:placeholder-shown):invalid {
+    border-color: var(--danger);
+    box-shadow:
+        0 0 0 4px rgba(255, 51, 51, 0.12)
+}
+
+.form-field input:not(:placeholder-shown):valid{
+    border-color: var(--pass);
+    box-shadow:
+        0 0 0 4px rgba(51, 255, 61, 0.12)
+}
+
+.form-field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 150ms ease;
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+
+    .form-section {
+        padding:
+            30px 14px;
+        
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .form-container {
+        padding:
+            26px 20px;
+
+        border-radius:
+            0 0 var(--radius-md) var(--radius-md);
+    }
+
+    .button {
+        width:
+            100%;
+    }
+    
+    .form-section img {
+
+        width: 100%;
+
+        height: 200px;
+
+        border-radius:
+            var(--radius-lg) var(--radius-lg) 0 0;
+    }
+}
