@@ -48,6 +48,10 @@ body {
     background:
         var(--background-soft);
 
+    background-image: url(../img/fondo.jpg);
+
+    background-size: cover;
+
     color:
         var(--text);
 }
