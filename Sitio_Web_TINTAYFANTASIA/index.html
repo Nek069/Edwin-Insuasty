@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prublicacion, ilustracion e impresion de libros, novelas gráficas y art books">
+    <title>TINTA&FANTASIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a class="brand" href="index.html">
+                <span class="brand-name">TINTA<span class="brand-separator">&</span>FANTASIA</span>
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>
+                        <span class="first-text">De la magia</span><br>
+                        <span class="second-text">a lo real</span>
+                    </h1>
+                    <p>Publicamos libros ilustrados, novelas graficas y artbooks
+                        con una cuidada manufactura artesanal. Descubre universos
+                        donde el arte y la narrativa se funden.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="primary-action" href="#catalogo">EXPLORAR CATÁLOGO</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="./img/referencia.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalogo">
+            <h1>Nuestro Catálogo</h1>
+            <div class="container">
+                <div class="product">
+                    <img src="./img/book1.jpg">
+                    <span>Villanos. Maléfica</span>
+                    <small>Novela Gráfica</small>
+                    <small>Por: Soo Lee</small>
+                </div>
+                <div class="product">
+                    <img src="./img/book2.jpg">
+                    <span>EL Cometa</span>
+                    <small>Libro Infantil</small>
+                    <small>Por: Joe Todd Stanton</small>
+                </div>
+                <div class="product">
+                    <img src="./img/book3.jpg">
+                    <span>The Art and Making of Arcane</span>
+                    <small>Art Book</small>
+
+                    <small>Por: Elisabeth Vincentelli</small>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="services" id="servicios">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <h3 class="warning">⚠️ Servicios de Publicacion y Maquetacion no están disponibles por el momento ⚠️
+                </h3>
+                <div class="services-grid">
+                    <a class="service-card" href="#">
+                        <div class="service-icon">
+                            <span>📖</span>
+                        </div>
+                        <h3>Publicación de Libros</h3>
+                        <p>Edición y publicación de libros ilustrados, novelas gráficas y art books con acabados de alta
+                            calidad.</p>
+                    </a>
+                    <a class="service-card" href="./ilustracion.html">
+                        <div class="service-icon">
+                            <span>🖋️</span>
+                        </div>
+                        <h3>Ilustración</h3>
+                        <p>Creación de arte original para portadas, diseño de personajes, escenarios y páginas
+                            interiores.</p>
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-icon">
+                            <span>📐</span>
+                        </div>
+                        <h3>Maquetación e Impresión</h3>
+                        <p>Diseño editorial cuidadoso y gestión de impresión artesanal sobre papeles de texturas finas.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="nosotros">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <img src="./img/taller.jpg" alt="Nuestro taller de ilustración y diseño">
+                </div>
+                <div class="about-copy">
+                    <h2 class="section-title">El Taller</h2>
+                    <p>Somos una editorial independiente nacida de la pasión por el arte impreso y las buenas historias.
+                        Creemos en el valor de lo artesanal, cuidando cada detalle desde el primer boceto hasta la
+                        encuadernación final.</p>
+                    <p>En nuestro estudio, el olor a tinta y el tacto del papel crema son la inspiración diaria para dar
+                        vida a universos visuales únicos que perduran en el tiempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-grid">
+                <div class="cta-copy">
+                    <h2 class="section-title">Hagamos realidad tu historia</h2>
+                    <p>¿Tienes un manuscrito, un portafolio o una idea para un art book? Escríbenos y comencemos a
+                        trazar las primeras líneas de tu proyecto.</p>
+                </div>
+                <div class="cta-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Háblanos de tu proyecto..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="primary-action">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <section>
+                <span class="brand-name">TINTA<span class="brand-separator">&</span>FANTASIA</span>
+            </section>
+            <section>
+                <div class="contact">
+                    <a href="https://www.instagram.com">
+                        <img src="./img/instagram.png" width="30" height="30">
+                    </a>
+                    <a href="https://www.x.com">
+                        <img src="./img/x.png" width="30" height="30">
+                    </a>
+                    <a href="https://www.artstation.com">
+                        <img src="./img/artstation.png" width="30" height="30">
+                    </a>
+                </div>
+            </section>
+            <section>
+                <p>© 2026 TINTA&FANTASIA Ediciones. Todos los derechos reservados.</p>
+            </section>
+        </div>
+        <p class="derechos">
+            Las imágenes utilizadas en este sitio son propiedad de sus respectivos autores
+            y se muestran con fines exclusivamente académicos. Todos los derechos
+            pertenecen a quienes corresponda.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
