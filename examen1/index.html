@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaludVida Hospital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a class="brand" href="index.html">
+                <img class="logo" src="./img/logos/logo-saludvida-header.png" alt="logo">
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="./index.html">Inicio</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+            <nav class="nav buscar" aria-label="Buscador">
+                <a href="#"><img src="./img/icons/search.svg" alt="buscar" width="70" height="70"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>
+                        <span class="first-text">Cuidamos <br>
+                            lo más importante: <br>
+                            tu salud
+                        </span>
+                    </h1>
+                    <p>
+                        Atencion médica integral con un equipo humano <br>
+                        comprometido y tecnología de vanguardia.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="primary-action" href="#catalogo">Conoce nuestros Servicios</a>
+                    </div>
+                    <div class="hero-visual">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nosotros" id="nosotros">
+            <div class="container">
+                <article class="service-card">
+                    <img src="./img/icons/bandaid.svg" height="50" width="50">
+                    <h3>Atencion integral</h3>
+                    <p>Para toda la familia</p>
+                </article>
+                <article class="service-card">
+                    <img src="./img/icons/heart-pulse-fill.svg" height="50" width="50">
+                    <h3>Especialistas</h3>
+                    <p>Para toda la familia</p>
+                </article>
+                <article class="service-card">
+                    <img src="./img/icons/gear-fill.svg" height="50" width="50">
+                    <h3>Tecnologia</h3>
+                    <p>Para toda la familia</p>
+                </article>
+                <article class="service-card">
+                    <img src="./img/icons/group-svgrepo-com.svg" height="60" width="60">
+                    <h3>Compromiso</h3>
+                    <p>Para toda la familia</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalog" id="noticias">
+            <div class="title-sec">
+                <h1 class="serv-title">Noticias destacadas</h1>
+                <a href="#">Ver Todos <img src="./img/icons/arrow-right.svg" alt="flecha" height="30" width="30"></a>
+            </div>
+            <div class="container">
+            <article class="news-card">
+                <img class="news-img" src="./img/fondos/camillas.jpg" alt="Nueva Unidad de Cuidados Intensivos">
+                <div class="news-body">
+                    <span class="news-tag tag-institucional">Institucional</span>
+                    <h3>Inauguramos la nueva Unidad de Cuidados Intensivos</h3>
+                    <p>Ampliamos nuestra capacidad de atención con tecnología de última generación.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-04-10">10 abr. 2026</time>
+                        <a href="#" aria-label="Leer más"><img src="./img/icons/arrow-right.svg" alt="" width="20" height="20"></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img class="news-img" src="./img/fondos/doctores.jpg" alt="Campaña de vacunación infantil">
+                <div class="news-body">
+                    <span class="news-tag tag-salud">Salud</span>
+                    <h3>Campaña de vacunación infantil en nuestra ciudad</h3>
+                    <p>Jornadas gratuitas de vacunación para niños y niñas de 0 a 5 años.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-04-08">8 abr. 2026</time>
+                        <a href="#" aria-label="Leer más"><img src="./img/icons/arrow-right.svg" alt="" width="20" height="20"></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img class="news-img" src="./img/fondos/bienestar.jpg" alt="Jornada de bienestar">
+                <div class="news-body">
+                    <span class="news-tag tag-comunidad">Comunidad</span>
+                    <h3>Jornada de bienestar para nuestros colaboradores</h3>
+                    <p>Más de 200 empleados participaron en actividades de salud física y mental.</p>
+                    <div class="news-footer">
+                        <time datetime="2026-04-05">5 abr. 2026</time>
+                        <a href="#" aria-label="Leer más"><img src="./img/icons/arrow-right.svg" alt="" width="20" height="20"></a>
+                    </div>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <section class="servicios" id="servicios">
+            <div class="title-sec">
+                <h1 class="serv-title">Nuestros servicios</h1>
+                <a href="#">Ver Todos <img src="./img/icons/arrow-right.svg" alt="flecha" height="30" width="30"></a>
+            </div>
+            <div class="container">
+                <article class="service-card">
+                    <img src="./img/icons/stethoscope-svgrepo-com.svg" height="50" width="50">
+                    <h3>Consulta externa</h3>
+                    <p>Atencion médica especializada para todas las edades</p>
+                </article>
+                <article class="service-card">
+                    <img src="./img/icons/heart-pulse-fill.svg" height="50" width="50">
+                    <h3>Urgencias</h3>
+                    <p>Atencion 24/7 para todas las edades</p>
+                </article>
+                <article class="service-card">
+                    <img src="./img/icons/bed-svgrepo-com.svg" height="50" width="50">
+                    <h3>Hospitalizacion</h3>
+                    <p>Habitaciones seguras y confortables</p>
+                </article>
+                <article class="service-card">
+                    <img src="./img/icons/group-svgrepo-com.svg" height="60" width="60">
+                    <h3>Programas de salud</h3>
+                    <p>Prevencion y bienestar para la comunidad</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <section>
+                <img src="./img/logos/logo-saludvida-footer.png" alt="piepagina">
+                <p>Trabajamos cada dia por una mejor claidad de vida. <br>
+                    Promoviendo la laud y el bienestar de nuestra comunidad
+                </p>
+            </section>
+
+            <section>
+                <div class="contact">
+                    <h2>Navegación</h2>
+                    <a href="#header">
+                        Inicio
+                    </a>
+                    <a href="#noticias">
+                        Noticias
+                    </a>
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+                    <a href="./contacto.html"">
+                        Contacto
+                    </a>
+
+                </div>
+            </section>
+
+            <section>
+                <div class=" contact">
+                        <h2>Servicios</h2>
+                        <a href="#services">
+                            Consulta externa
+                        </a>
+                        <a href="#services">
+                            Urgencias
+                        </a>
+                        <a href="#services">
+                            Hospitalizacion
+                        </a>
+                        <a href="#services">
+                            Programa de salud
+                        </a>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact">
+                    <h2>Siguenos</h2>
+                    <div class="contact footer-container">
+                        <a href="https://www.facebook.com">
+                            <img src="./img/logos/facebook.svg" width="80" height="80">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="./img/logos/instagram.svg" width="80" height="80">
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <img src="./img/logos/linkedin.svg" width="80" height="80">
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <img src="./img/logos/youtube.svg" width="80" height="80">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <p class="derechos">
+            © 2026 Hospital SaludVida Tdoso los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

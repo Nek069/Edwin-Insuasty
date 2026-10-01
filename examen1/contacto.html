@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SaludVida Hospital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a class="brand" href="index.html">
+                <img class="logo" src="./img/logos/logo-saludvida-header.png" alt="logo">
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="./index.html">Inicio</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+            <nav class="nav buscar" aria-label="Buscador">
+                <a href="#"><img src="./img/icons/search.svg" alt="buscar" width="70" height="70"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-form" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>
+                        Contáctanos
+                    </h1>
+                    <p>
+                        Estamos aqui para ayudarte. Completa el formulario <br>
+                        y nos pondremos en contacto contigo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+
+            <div class="form-container">
+
+                <header class="form-header">
+                    <h1>Formulario de Contacto</h1>
+                    <p>Diligencia tus datos y cuéntanos cómo podemos ayudarte</p>
+                </header>
+
+                <form class="contact-form" action="#" method="post">
+
+                    <section class="form-block">
+
+                        <div class="form-field">
+                            <label for="nombre">
+                                Nombre completo
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="nombre" name="nombre" autocomplete="name"
+                                placeholder="Tu nombre completo" required>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="tipo-documento">
+                                    Tipo de documento
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <select id="tipo-documento" name="tipo-documento" required>
+                                    <option value="" selected disabled>Seleccione una opción</option>
+                                    <option value="cc">Cédula de ciudadanía</option>
+                                    <option value="ce">Cédula extranjera</option>
+                                    <option value="ti">Tarjeta de identidad</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="documento">
+                                    Número de documento
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input type="text" id="documento" name="documento" inputmode="numeric"
+                                    placeholder="Tu número de documento" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="fecha">Fecha de nacimiento</label>
+                                <input type="date" id="fecha" name="fecha">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="telefono">
+                                    Teléfono
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <input type="tel" id="telefono" name="telefono" autocomplete="tel"
+                                    placeholder="+57 300 000 0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">
+                                Correo electrónico
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" autocomplete="email"
+                                placeholder="nombre@correo.com" required>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="ciudad">
+                                    Ciudad
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <select id="ciudad" name="ciudad" required>
+                                    <option value="" selected disabled>Seleccione una ciudad</option>
+                                    <option value="pasto">Pasto</option>
+                                    <option value="bogota">Bogotá</option>
+                                    <option value="cali">Cali</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="servicio">
+                                    Servicio de interés
+                                    <span class="required-mark" aria-hidden="true">*</span>
+                                </label>
+                                <select id="servicio" name="servicio" required>
+                                    <option value="" selected disabled>Seleccione un servicio</option>
+                                    <option value="consulta-externa">Consulta externa</option>
+                                    <option value="urgencias">Urgencias</option>
+                                    <option value="hospitalizacion">Hospitalización</option>
+                                    <option value="programas-salud">Programas de salud</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <fieldset class="motivo">
+                            <legend>
+                                Motivo del contacto
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </legend>
+                            <div class="choice-list choice-list-2">
+                                <label class="choice">
+                                    <input type="radio" name="motivo" value="informacion" checked>
+                                    Solicitar información
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="motivo" value="cita">
+                                    Agendar una cita
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="motivo" value="sugerencia">
+                                    Comentario o sugerencia
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="motivo" value="otro">
+                                    Otro
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-field">
+                            <label for="mensaje">
+                                Mensaje
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </label>
+                            <textarea id="mensaje" name="mensaje" rows="7" maxlength="1200"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <small class="field-help">Máximo 1200 caracteres.</small>
+                        </div>
+
+                        <label class="choice choice-terms">
+                            <input type="checkbox" name="politica" required>
+                            <span>
+                                Acepto la <a href="#">política de tratamiento de datos personales.</a>
+                                <span class="required-mark" aria-hidden="true">*</span>
+                            </span>
+                        </label>
+
+                        <div class="form-actions">
+                            <button type="submit" class="button button-primary">
+                                Enviar mensaje <img src="./img/icons/arrow-right.svg" alt="">
+                            </button>
+                        </div>
+
+                    </section>
+
+                </form>
+            </div>
+
+            <aside class="form-container2">
+
+                <h2 class="side-title">Información de contacto</h2>
+
+                <ul class="info-list">
+                    <li class="info-item">
+                        <span class="info-icon"><img src="./img/icons/geo-alt-fill.svg" alt=""></span>
+                        <div>
+                            <strong>Direccion</strong>
+                            <p>Calle 123 #45-67<br>Bogotá, Colombia</p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon"><img src="./img/icons/telephone-forward-fill.svg" alt=""></span>
+                        <div>
+                            <strong>Telefono</strong>
+                            <p>+57 601 123 4567</p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon"><img src="./img/icons/envelope.svg" alt=""></span>
+                        <div>
+                            <strong>Correo electronico</strong>
+                            <p>info@saludvida.com</p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon"><img src="./img/icons/calendar-check-fill.svg" alt=""></span>
+                        <div>
+                            <strong>Horario de atencion</strong>
+                            <p>Lunes a viernes<br>7:00 a.m. - 6:00 p.m.</p>
+                            <p>Sábados<br>7:00 a.m. - 12:00 m.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <h2 class="side-title">Ubícanos en el mapa</h2>
+                    <img src="./img/maps/mapa.png" alt="mapa">
+
+                <h2 class="side-title">Síguenos en redes sociales</h2>
+                <div class="social">
+                    <a href="https://www.facebook.com" aria-label="Facebook"><img src="./img/logos/facebook.svg"
+                            alt=""></a>
+                    <a href="https://www.instagram.com" aria-label="Instagram"><img src="./img/logos/instagram.svg"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="./img/logos/linkedin.svg"
+                            alt=""></a>
+                    <a href="https://www.youtube.com" aria-label="YouTube"><img src="./img/logos/youtube.svg"
+                            alt=""></a>
+                </div>
+
+            </aside>
+
+        </section>
+
+
+
+    </main>
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+
+            <section class="footer-brand">
+                <img class="footer-logo" src="./img/logos/logo-saludvida-footer.png" alt="SaludVida Hospital">
+            </section>
+
+            <section>
+                <div class="contact">
+                    <h2>Síguenos</h2>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" aria-label="Facebook"><img src="./img/logos/facebook.svg"
+                                alt=""></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram"><img src="./img/logos/instagram.svg"
+                                alt=""></a>
+                        <a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="./img/logos/linkedin.svg"
+                                alt=""></a>
+                        <a href="https://www.youtube.com" aria-label="YouTube"><img src="./img/logos/youtube.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact">
+                    <h2>Enlaces rápidos</h2>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./index.html#noticias">Noticias</a>
+                    <a href="./index.html#servicios">Servicios</a>
+                    <a href="./index.html#nosotros">Nosotros</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact">
+                    <h2>Información</h2>
+                    <p class="footer-line">
+                        <img src="./img/icons/geo-alt-fill.svg" alt="">
+                        Calle 123 #45-67, Bogotá
+                    </p>
+                    <p class="footer-line">
+                        <img src="./img/icons/telephone-fill.svg" alt="">
+                        +57 601 123 4567
+                    </p>
+                    <p class="footer-line">
+                        <img src="./img/icons/envelope-fill.svg" alt="">
+                        info@saludvida.com
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="derechos">© 2026 SaludVida Hospital. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos de uso</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
