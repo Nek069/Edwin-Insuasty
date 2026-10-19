@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+:root {
+    --titulo: #ff4900;
+    --parrafo: #0093ff;
+    --parrafo-nerko: #c500ff;
+    --link: #001bff;
+    --link-visitado: #4CAF50;
+    --link-hover: #ff6600;
+
+    --encabezado: #000000;
+    --fuente-encabezado: #ffffff;
+    --fila-clara: #bec1c3;
+    --fila-central: #045795;
+    --fuente-oscura: #000000;
+    --fuente-clara: #ffffff;
+
+    --tamaño-titulo: 2rem;
+    --tamaño-parrafo: 1rem;
+    --tamaño-parrafo-pequeño: 12px;
+    --tamaño-tabla: 1.5rem;
+
+    --fuente-base: Arial, sans-serif;
+    --fuente-nerko: "Nerko One", cursive;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--fuente-base);
+    margin: 1rem;
+}
+
+h2 {
+    font-size: var(--tamaño-titulo);
+    color: var(--titulo);
+}
+
+p {
+    font-family: var(--fuente-base);
+    font-size: var(--tamaño-parrafo);
+    color: var(--parrafo);
+ }
+
+p.nekro {
+    font-family: var(--fuente-nerko);
+    font-size: var(--tamaño-parrafo-pequeño);
+    color: var(--parrafo-nerko);
+}
+
+a {
+    color: var(--link);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-visitado);
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--encabezado);
+  color: var(--fuente-encabezado);
+  font-size: var(--tamaño-tabla);
+}
+
+td {
+  font-size: var(--tamaño-tabla);
+}
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(3) {
+  background-color: var(--fila-clara);
+  color: var(--fuente-oscura);
+}
+
+tbody tr:nth-child(2) {
+  background-color: var(--fila-central);
+  color: var(--fuente-clara);
+}
