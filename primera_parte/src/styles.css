@@ -8,6 +8,7 @@
     --link: #001bff;
     --link-visitado: #4CAF50;
     --link-hover: #ff6600;
+    --borde-tabla: #000000;
 
     --encabezado: #000000;
     --fuente-encabezado: #ffffff;
@@ -43,7 +44,7 @@ p {
     font-family: var(--fuente-base);
     font-size: var(--tamaño-parrafo);
     color: var(--parrafo);
- }
+}
 
 p.nekro {
     font-family: var(--fuente-nerko);
@@ -67,27 +68,31 @@ a:hover {
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--borde-tabla);
+
 }
 
 th {
-  background-color: var(--encabezado);
-  color: var(--fuente-encabezado);
-  font-size: var(--tamaño-tabla);
+    background-color: var(--encabezado);
+    color: var(--fuente-encabezado);
+    font-size: var(--tamaño-tabla);
+    border: 1px solid var(--borde-tabla);
 }
 
 td {
-  font-size: var(--tamaño-tabla);
+    font-size: var(--tamaño-tabla);
+    border: 1px solid var(--borde-tabla);
 }
 
 tbody tr:nth-child(1),
 tbody tr:nth-child(3) {
-  background-color: var(--fila-clara);
-  color: var(--fuente-oscura);
+    background-color: var(--fila-clara);
+    color: var(--fuente-oscura);
 }
 
 tbody tr:nth-child(2) {
-  background-color: var(--fila-central);
-  color: var(--fuente-clara);
+    background-color: var(--fila-central);
+    color: var(--fuente-clara);
 }
